@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+gem 'graphql', '<= 1.7'
+gem 'graphiql-rails', '<= 1.5'
+
 source 'https://rubygems.org'
 gem 'unicorn'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -62,3 +65,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# gem 'graphiql-rails', group: :development
